@@ -33,7 +33,7 @@ def type_advantage(attacker, defender):
 
     return effectiveness.get((attacker, defender), "Neutral")
 
-#Effectiveness
+#Effectiveness Against Different Pokemon
 print(type_advantage("Water", "Fire"))  # "Super Effective"
 print(type_advantage("Fire", "Water"))  # "Not Very Effective"
 print(type_advantage("Electric", "Grass"))  # "Neutral"
@@ -77,4 +77,3 @@ def level_up(experience):
 experience_points = int(input("Enter your experience points: "))
 new_level = level_up(experience_points)
 print(f"Your new level is: {new_level}")
-
